@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+  <meta charset="UTF-8">
+  <head>
+	<title>Cinnemark</title>
+	<style > 
+	  body{
+          background-color:#111133;
+		  width:100%;
+		  height:100%;
+		  margin:0px;
+		  padding:0px; 
+	  }
+	  canvas { 
+		  display:inline-block;
+		  position:relative;
+		  margin-top:-5vh;
+		  margin-bottom:-25vh;
+		  margine-left:0;
+		  margine-right:0;
+		  
+		  width:100%;
+		  z-index:-1;
+	  }
+
+	  p{
+	  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	  }
+	  h2{
+	  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+	  font-size : 250%;
+	  line-height: 25%;
+	  }
+	  h3{
+	  font-family: Times, serif ;
+	  font-size:150%;
+	  line-height: 25%;
+	  
+	  }
+
+	</style>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script> 
+	</script>
+
+
+  </head>
+
+  <body style="text-align:left;" >
+  
+	<div style="margin-left:20vw; margin-right:20vw;">
+		<!--//always the same-->
+		<div id="iconfield">
+		  <!--div style="float: left;margin-right:1vw; font: 16px verdana black; color: #fff;">031-556041</div-->
+		  <a href="http://www.facebook.com"><div id="fb_icon" class="icon" ></div></a>
+		  <a href="http://www.twitter.com"><div  id="tw_icon" class="icon" ></div> </a>
+		</div>
+
+		<!--//TODO: dynamically load css-->
+	
+		  
+		  <div id="cintop" onclick="location.reload()" style="width:100%; "><!-- HEADER -->
+			  <div id="cinnemark">
+			  <img src="logo_svan_large.svg" style="margin-top:2vh; margin-left: 1vw;"></img>
+				
+			  <!--cm2>Cinne</cm2><cm1>mark</cm1-->
+			  </div>
+			
+			<!-- TOP MENU -->
+			<div id="topmenu">
+			  <div id="om_oss" onclick="scroll_to('om_oss_text')" class="menu_item"> Om oss </div>
+			  <div id="tjanster" onclick="scroll_to('tjanster_text')" class="menu_item"> Tjänster </div> 
+			  <div id="socialt" onclick="scroll_to('socialt_text')" class="menu_item"> Socialt </div> 
+			  <div id="kontakt" onclick="scroll_to('kontakt_text')" class="menu_item"> Kontakt </div> 
+			</div>
+		  </div>
+	</div>
+	
+	<canvas id="canvas"></canvas>
+	  
+	<div style="margin-left:20vw; margin-right:20vw;">
+		
+		  
+		  <!-- LOWER, BIG MENU -->
+		  <!--div style="position:relative; float:left; width:100%;"-->
+			
+			<div id="bigmenu">
+				
+				<!--img src="analys.svg"/></img>
+				<img src="globe.svg"/></img>
+				<img src="hammer.svg"/></img-->
+				<div class = "big"><img src="magn.svg"/></img>ANALYS & STRATEGI</div>
+				<div class = "big"><img src="nut.svg"/></img>GENOMFÖRANDET<br></div>
+				<div class = "big"><img src="puzzle.svg"/></img>HELHETEN</div>
+			  <!--div class="big"> Analys & strategi </div>
+			  <div class="big"> Genomförandet </div>
+			  <div class="big"> Helheten </div-->
+			  
+			</div>
+			
+			<!--div id="spalt" style="width:40%;margin-left:7vw; margin-top:2vh;margin-bottom:5vh; float:left;" >		  
+			  Som kommunikationsbyrå för mindre företag ser vi att närvaron på exempelvis Facebook elegant 
+			  och kostnadseffektivt kan lyftas med hjälp av rätt innehåll. Det positiva är att det kan göras 
+			  utan att anställa en egen kommunikatör.
+			</div-->
+	</div> 
+	
+	
+	<div style="background-color:#fff;">  	
+	
+		  <!-- LOWER CONTENT -->
+		
+		  <div style="margin-left:20vw; margin-right: 20vw; margin-top:-4vh; text-align:center;">
+
+
+			
+
+			
+			<!-- VÅRA TJÄNSTER -->
+			<div id="tjanster_text" class="section">
+			  
+			  <h2>Våra tjänster</h2>
+
+			  <p>Idag räcker det knappast att enbart finnas på sociala medier. Man måste ju veta vad man gör där också. Innehållet i det du berättar om ditt företag är avgörande för hur ni uppfattas. Det färgar era kunders, konkurrenters, leverantörers och faktiskt även era medarbetares bild av företaget.</p>
+			  
+			  <p>I en digital tid ligger en stor del av utmaningen i hur innehållet ska väljas, produceras och presenteras med en träffande ton. Man kan tycka vad man vill om Facebook men deras 5,2 miljoner svenska konton gör att man behöver kunna motivera varför man ska avstå den kanalen, om man nu ska det. Även övriga sociala medier bör övervägas medvetet.</p>
+			  
+			  <p>Vi är bra på innehållsmarknadsföring i sociala medier. Vår kompetens är visserligen bredare än så, vi har t ex koll på sökalgoritmer, hemsides- och trycksaksproduktion, men ordet “innehåll” anger ändå riktningen.</p>
+			  
+			  <p>Under 1990-talet var det populärt att starta kundtidningar som en del av kundvården. Många företag drog igång tidningsprojekt men kom snart till en reklambyrå för att få hjälp. Allt för att inte tappa fokus på sin kärnverksamhet. Idag behöver många en partner inom den digitala marknadsföringen – utan att tappa fokus på sin kärnkompetens.</p>
+			  <p>Vi på Cinnemark vill vara din partner i analysen av ditt kanalval, i din innehållsstrategi och – om det behövs – i genomförandet av kommunikationen via sociala medier.</p>
+
+			</div>
+
+
+			<div style="height: 40vh;	width:100%; background-image: url( 'img/DSC_0126.jpeg' );  
+						background-size: 100%; background-repeat: no-repeat; "></div>
+			<!--img src="img/DSC_0126.jpeg" alt="Saker" style="width: auto; height:50%;"></img-->
+				
+
+			<!-- ANALYS & STRATEGI -->
+			<div id= "analys_text" class="section">
+			  
+			  <h2>Analys och strategi</h2>
+			  <h3>-Strategi och analys!</h3>
+			  <p>Vi skapar en strategi för ditt innehåll i sociala medier. Det kan inte göras efter en mall utan måste ske utifrån helheten. Ditt företag, dina kunder och din bransch är unik. Det gör att inte alla kanaler passar och att innehållet måste anpassas efter det. Utgångspunkten är ditt syfte med närvaron på de sociala medierna och, naturligtvis, de värden ditt varumärke står för. Ditt företags anseende, budskap och värden kan förmedlas. En dialog med kunder kan upprättas. Ett sätt att stärka försäljningen kan skapas.</p>
+
+			  <p>Vi erbjuder – utifrån en fast kostnad – att göra en genomlysning av ditt företags nuläge för att skapa ett redskap för din innehållsstrategi. Redskapet består av en rapport och en presentation med ett genomarbetat förslag till hur en publicerings- och innehållsstrategi utifrån teman kan införas.</p>
+
+			  <p>Om vi under arbetets gång t ex upptäcker att det är viktigare för er att först fokusera på att hamna högt på Google så säger vi det. Eller om vi ser att er närvaro på sociala medier borde begränsas så säger vi det. En analys är en analys. Men det går att lyckas med sin närvaro på sociala medier och vi vill vara en del av din väg mot målet. Kontakta oss för att få veta mer.</p>
+
+			</div> 
+
+			<div style="height: 50vh;	width:100%; background-image: url( 'img/DSC_0803.jpeg' );  
+						background-size: 100%; background-repeat: no-repeat; "></div>
+
+			<!--img src="img/DSC_0803.jpeg" style="width: 100%;"></img-->
+
+			<!-- GENOFÖRANDE -->
+			<div id="genom_text" class="section">
+			  <h2>Genomförande</h2>
+			  <p>Varje organisation har olika förutsättningar. Om du leder ett mindre företag och både har tid och intresse för att själv hantera Facebook, Instagram eller Twitter så räcker det förmodligen. Det löpande budskapen – basutbudet – har ett naturligt flöde. Vår analys & innehållsstrategi  kan då  tydliggöra strategin. Likaså om det finns det någon eldsjäl bland medarbetarna som kan sköta kommunikation och dialog via sociala medier.</p>
+			  
+			  <p>Men alla organisationer ser olika ut. Vi erbjuder att handha kommunikationen via de kanaler ni vill och med en tät dialog. Naturligtvis sker ett sådant samarbete under strikt reglerade former och bygger som all outsourcing på tillit. Exempelvis schema-lägger vi varje publicering så att ansvarig person hos er i god tid hinner godkänna varje nytt steg. Det bästa är att mötas så att vi kan prata vidare om detta.</p>
+			  
+			</div> 
+
+
+			<div style="height: 40vh;	width:100%; background-image: url( 'img/DSC_0433.jpeg' );  
+						background-size: 100%; background-repeat: no-repeat; "></div>
+
+
+			<!-- Helheten -->
+			<div id="helheten_text" class="section">
+			  <h2>Helheten</h2>
+			  <p>Sociala medier är inte allt här i världen. De är viktiga kanaler men tryckta medier kan fortfarande ha en roll i din kommunikation och dina kundkontakter.</p>
+			  
+			  <p>Det finns faktiskt exempel på företag som dragit ner för mycket på traditionell reklam i sin iver att komma ut på sociala medier, något som visat sig negativt i bokslutet. Det hör sannolikt till undantagen, men alla åtgärder måste göras med ett sunt omdöme. Om du säljer glass så jagar du kanske inte nya kunder via sociala medier. Kioskens ”inropare” i form av reklamskyltar är sannolikt viktigare en solig dag.</p>
+			  
+			  <p>Vi, och i synnerhet Roger, har en lång erfarenhet från printreklam i form av företagspresentationer, foldrar, affischer eller annonser. Vi har även erfarenhet av PR och har producerat pressreleaser och artiklar etc. Vi jobbar med glädje även också inom dessa fält.</p>
+			  
+			  <p>Däremot ska vi säga att vi inte är bra på allt. (Det är inte ens de riktigt stora, exklusiva reklambyråerna.) Vi har exempelvis begränsningar när det gäller mässor, eventmarknadsföring, avancerad fotografering och filmproduktion. Istället finns det duktiga leverantörer inom dessa områden inom vårt nätverk.</p>
+
+			  <p>Något av det viktigaste är att alla dina insatser för att synas och att kommunicera med befintliga och potentiella kunder drar åt samma håll. Det gäller såväl traditionella, digitala och sociala medier.</p>
+
+			</div>
+
+			<table> 
+			  <tr> 
+				<img src="img/DSC_1377.jpeg" style="width: 49%; margin-right:.1%;"></img>
+				<img src="img/DSC_0371.jpeg" style="width: 49%; margin-left:.1%;"></img>
+			  </tr>
+			</table>
+
+
+			  
+			<!-- Om oss -->
+			<div id="om_oss_text" class="section">
+			  <h2>Om oss</h2>
+			  <p>Cinnemark är en nystartad kommunikationsbyrå i Göteborg som idag består av två medarbetare och ett nätverk av specialister inom olika nischer av marknadsföringen. Fokus ligger på innehållsmarknadsföring inom sociala medier och inriktningen är att hjälpa små- och medelstora företag.</p>
+
+			  <p>Roger har arbetat inom kommunikationsbranschen i trettio år. Från början med layout och sedan allt mer som copywriter. Huvudsakligen på reklambyråer i Stockholm och Göteborg men även inom förlagsbranschen. Han har bland annat grundat ett bokförlag. Roger har en utbildning inom kommunikations- och massmedievetenskap (JMG) samt även läst en hel del filosofi på universitetsnivå. Framför allt älskar han kommunikation i olika former. Vill du läsa med så kan du titta på Roger Gustavssons LinkedIn-sida.</p>
+
+			  <p>Kristoffer är en passionerad spelutvecklare. Han är en utbildad spelprogrammerare från Högskolan i Skövde. Han har även studerat programmering vid Chalmers. Han har teknisk kompetens t ex när det gäller att skapa hemsidor eller bygga nätverk även om hans spetskompetens ligger på spelprogrammering och illustrationer. Inom Cinnemark är han en given medspelare när det gäller problemlösning och design.</p>
+
+			</div>
+
+			<table> 
+			  <tr> 
+				<img src="img/DSC_1377.jpeg" style="width: 49%; margin-right:.1%;"></img>
+				<img src="img/DSC_0371.jpeg" style="width: 49%; margin-left:.1%;"></img>
+			  </tr>
+			</table>
+			
+			<!-- Soicalt -->
+			<div id="socialt_text" class="section" style="padding-bottom:10vh;">
+			  <h2>Socialt</h2>
+			  <p>Navet i den digitala marknadsföringen är företagets webbplats. En sida som behöver vara responsiv så att den även fungerar på smartphones etc. Den behöver också vara sökbar. Men det visar sig att sociala medier ofta är det effektiva sättet att stå i relation till kunder och potentiella kunder.</p>
+
+			  <p>En fördel med sociala medier jämfört med en webbplats är att man som ”följare” blir uppsökt med nya inlägg i nyhetsflödet. Hemsidan däremot måste aktivt sökas upp varje gång. Den är central men inte självklart lika välbesökt.</p>
+
+			  <p>Sociala medier är förstås mycket mer än giganten Facebook. För företag som vänder sig till företag (B2B) är det inte alls givet att FB är rätt kanal. Bland amerikanska B2B-företag är användningen av LinkedIn och till och med Twitter högre än Facebook. När det gäller ”leads”, dvs kontakt med potentiella köpare, kommer de i väsentligt högre utsträckning via LinkedIn.</p>
+			  
+			  <p>Om du däremot sysslar med B2C, vänder dig direkt till konsumenter, kan Facebook många gånger vara rätt kanal. Eller varför inte Instagram? Det finns en frisör i Göteborgs nya stadsdel Kvillestaden som har hela 10.000 följare på sitt Instagramkonto. Hon har varken några problem att fylla kalendern med kunder eller att ta bra betalt för sin kompetens. Generellt är dock Facebook en mer tillgänglig kanal.</p>
+			  
+			  <p>Men innehållsmarknadsföring handlar om att uthålligt skapa och dela intressant innehåll. Helst på ett strukturerat sätt. Vilken kanal man ska använda går alltid att klura ut, men att veta vad man ska säga och hur man ska....</p>
+			</div>
+			
+	    </div>
+	</div>
+	
+		
+	<!-- END CONTENT -->
+	<div style=
+	  "margin-left:20vw; margin-right: 20vw; ">
+		
+	 
+		<!-- Kontakt -->
+		
+			<div id = "kontakt_text" class="section" style=
+				"color:#ddd;" >
+				
+					<h2>Kontakt</h2>
+					<p>Kontakta oss för en vidare dialog.</p>
+					<p><a href="mailto:kontakt@cinnemark.se" style="color:#fff;">kontakt@cinnemark.se</a></p>
+					<p>0729-123456</p>
+					<p>Blaha Box Göteborg</p>
+			</div>
+		
+		 <!--img src="logo_svan.svg" style="padding-top: 5vh; padding-left:10vh;width:50%; height:25%;"></img-->		
+		  
+			
+		  <!--p>git clone https://github.com/qristofer/qristofer.github.io.git</p-->
+		
+	</div>
+	
+		<div style="width:100%; text-align:center; color:#ccc; ">
+		<p>© Cinnemark 2016</p>
+		</div>
+	  
+	  
+	
+	
+
+  </body>
+  
+  <script src="math.js"></script>
+  <script src="main.js"></script>
+  
+</html>

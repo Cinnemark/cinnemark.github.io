@@ -1,0 +1,118 @@
+ 
+
+/*cm1{color:#eee533;color: #eecc33;	}
+cm2{color:#3399ee;	}*/
+
+#iconfield{
+	//position:absolute;
+	//right:0;
+	
+	text-align:right;
+	margin-right:2vh;
+	margin-top:2vh;
+
+}
+
+div.icon{
+	display:inline-block;
+	vertical-align:top;
+	margin-right:1vw;
+	width:28px; 
+	height:28px;
+	border-radius:10px;
+}
+#fb_icon{	
+	background:url(F_icon.svg);
+	background-repeat:no-repeat; 
+	background-size:contain;
+}
+#tw_icon{
+	
+	background:url(T_icon.svg);
+	background-repeat:no-repeat; 
+	background-size:contain;
+}
+
+#cinnemark{
+	
+	display:inline-block;
+	vertical-align:bottom;
+	width:50%;
+
+	text-align:center;
+	margin:0 auto;
+ 
+	
+	color:#fff;
+	
+
+}
+
+#topmenu{
+	display:inline-block;
+	vertical-align:bottom;
+	padding-bottom: 5vh;
+	width:48%;
+	color:#000;
+}
+
+div.menu_item{
+
+	display:inline-block;
+	vertical-align:bottom;
+
+	margin-top:0;
+	margin-left:1.2vw;
+	
+	font: bold 1.25vw verdana;
+	color: #CCCCCC;
+
+	cursor:pointer;
+
+
+}
+
+#bigmenu{
+	
+	margin-top:-3vh; 
+	margin-bottom:2vh; 
+	
+	
+}
+
+#spalt {
+	display:inline-block;
+	vertical-align:top;
+	
+	font: bold italic 14px verdana;
+	color: #fff;
+}
+
+
+div.big{
+	display:inline-block;
+	vertical-align:top;
+	width :16%;
+
+	text-align:center;
+	margin: 0 auto;
+	 
+	
+
+	font: bold 1.75vh verdana;
+	color:#999;
+ 
+ 
+}
+
+div.section{
+	
+	padding-top:5vh;
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	text-align:left;
+	
+	font: bold 2vh verdana;
+	color: #115588;/*#3399ee;*/
+}
