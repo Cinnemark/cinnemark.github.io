@@ -12,29 +12,26 @@
 	  <style>
 
 		html,body{
-		width:100%;
-		height:100%;
-		margin:0px;
-		padding:0px;
+			font-family: 'Baloo Bhaina', cursive;
+			overflow: hidden;
+			background-color:#00c;
+			color:#fff;
 
-		background-color:#000;
-
+			/*maketh text unselectable*/
+			-webkit-user-select: none; /* Chrome/Safari */
+			-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+ */
 		}
-
 
 		.box {
 			display:block;
 			position: absolute;
 			z-index: 10;
 			color: red;
-			//top:0px;
-			//left:0px;
-			//visibility: hidden;
 		}
 
 		#start_button  {
-  		//font-family: 'Sofia';
-			font-family: 'Baloo Bhaina', cursive;
+  		/*font-family: 'Sofia';*/
 			font-size: 22px;
 			color: white;
 
@@ -46,46 +43,132 @@
 			padding: 16px;
 			margin: auto ;
 			visibility: hidden ;
+
+			cursor: pointer;
+
 		}
 
-		/*canvas {
-		position:absolute;
-		top:0;
-		left:0;
-		display:block;
-		width:100%;
-		height:100%;
+		/*
 
-		image-rendering: optimizeSpeed;
-		image-rendering: pixelated;
-		image-rendering: -moz-crisp-edges;
-		}*/
+		 	xy-centered container
 
+		*/
+		.outer {
+			display: table;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			visibility: hidden;
+		}
+		.middle {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.inner { /*THE GAME AREA*/
 
+		border: solid 2px red;
+
+		margin-left: auto;
+		margin-right: auto;
+		padding: 16px;
+		width: 400px;
+		position: relative;
+		}
+
+		/*
+
+			question div
+
+		*/
+		#question {
+
+			height: 300px;
+			text-align: center;
+
+			font-size: 22px;
+			background-color: grey;
+			border: solid 2px red;
+			border-radius: 12px;
+		}
+
+		.option {
+
+				font-size: 22px;
+				border: solid 2px red;
+				border-radius: 12px;
+				margin-top:16px;
+				background-color: grey;
+				padding-left:16px;
+				cursor: pointer ;
+
+		}
+		#msgbox {
+			position: absolute;
+
+			top: 400px;
+			left:115px;
+			width: 200px;
+			background-color: #f0f;
+			text-align: center;
+			visibility: hidden;
+		}
 	  </style>
 
 	<!--script src="snd.c"></script-->
 	<!--script src="piano.c"></script-->
 	<script src="math.c"></script>
 	<script src="splash.c"></script>
+	<script src="game.c"></script>
 	</head>
 
 	<body>
-		//start button
-		<div style="
-			position:absolute;
-			text-align:center;
-			width:100%;
-			top:50%;
-			text-align:center
-			background-color:#f0f;
-			">
-		<div id="start_button"></div>
+
+		<div class="outer" id="zone">
+			<div class="middle">
+	  		<div class="inner">
+					<div id="question">
+						<h1><div>
+						The Question
+					</div></h1>
+					<p><div>
+						<p>..stuff to be asked about</p>
+					</div></p>
+					</div>
+					<div id = "option_a" class="option" onclick='choose("option_a")'></div>
+					<div id = "option_b" class="option" onclick="choose('option_b')"></div>
+					<div id = "option_c" class="option" onclick="choose('option_c')"></div>
+					<div id = "option_d" class="option" onclick="choose('option_d')"></div>
+
+					<div id = "msgbox" > BUBUU! </div>
+
+	  		</div>
+			</div>
 		</div>
 
+		<!-- DIV for DYNAMIC CONTENT -->
 		<div id="content"
 			style ="width:100%; height:100%; margin: 0px; padding:0px">
 		</div>
+
+		<!--div style="
+			position:absolute;
+			text-align:center;
+			width:100%;
+			height:0%;
+			top:70%;
+			text-align:center
+			background-color:#f0f;
+			">
+			<div id="start_button" onclick="start_game()"></div>
+
+
+		</div>
+
+		<div
+
+		<div id="content"
+			style ="width:100%; height:100%; margin: 0px; padding:0px">
+		</div-->
 	  <!--canvas id="canvas"></canvas-->
 	</body>
 

@@ -1,24 +1,42 @@
+
+
 //		//		//		//		//		//		//		//		//		//
 
 //  MENU SCREEN
 
 //		//		//		//		//		//		//		//		//		//
 
-var start_box ;
+function start_game(){
+      console.log("start_game");
+      document.getElementById("start_button").style.visibility = "hidden" ;
+      //document.getElementById("start_bild").style.visibility = "hidden" ;
+      game_init();
+}
+
 function menu_init()
 {
   //document.body.style.textAlign = "center";
   tick = 0 ;
   update = menu_update ;
 
-  var start_box = document.getElementById("start_button") ;
-  //start_box.style.left = ((window.innerWidth>>1) - 154 ).toString() + "px"  ;
+  document.getElementById("zone").style.visibility = "visible" ;
+  //var start_box = document.getElementById("start_button") ;
+  //start_box.innerHTML = "TRYCK HÄR FÖR ATT BÖRJA" ;
+  //start_box.style.visibility = "visible" ;
 
-  start_box.innerHTML = "TRYCK HÄR FÖR ATT BÖRJA" ;
-  start_box.style.visibility = "visible" ;
-  start_box.addEventListener("click", function(){console.log("ALLAHU AKBAR")});
+  //document.getElementById("start_bild").style.visibility = "visible" ;
+  /*
+  start_box.addEventListener("click", function(){
+      start_box.
+
+      start_box = document.getElementById("start_button") ;
+      start_box.visibility = "hidden" ;
+      clear_body();
+      splash_init();
+
+    });*/
   //var xpos = window.innerWidth ;
-  console.log(start_box.innerWidth);
+
 
   //console.log( xpos );
   //start_box.style.left = .toString() + "px" ;

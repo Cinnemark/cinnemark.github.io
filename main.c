@@ -64,7 +64,8 @@ void function main()
 	window.addEventListener('resize', resize, false);
 
 	//splash_init();
-	menu_init();
+	//menu_init();
+	game_init();
 
 //	window.addEventListener('keydown',kbd);
 //	window.addEventListener('keyup', kbu);
