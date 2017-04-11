@@ -14,7 +14,7 @@
 		html,body{
 			font-family: 'Baloo Bhaina', cursive;
 			overflow: hidden;
-			background-color:#00c;
+			background-color:#000;
 			color:#fff;
 
 			/*maketh text unselectable*/
@@ -42,8 +42,7 @@
 			width:300px;
 			padding: 16px;
 			margin: auto ;
-			visibility: hidden ;
-
+			visibility: hidden;
 			cursor: pointer;
 
 		}
@@ -66,7 +65,7 @@
 		}
 		.inner { /*THE GAME AREA*/
 
-		border: solid 2px red;
+		/*border: solid 2px red; */
 
 		margin-left: auto;
 		margin-right: auto;
@@ -82,19 +81,20 @@
 		*/
 		#question {
 
-			height: 300px;
+			height: 350px;
 			text-align: center;
+			text-overflow: clip;
 
 			font-size: 22px;
 			background-color: grey;
-			border: solid 2px red;
+			/*border: solid 2px red;*/
 			border-radius: 12px;
 		}
 
 		.option {
 
 				font-size: 22px;
-				border: solid 2px red;
+				/*border: solid 2px red;*/
 				border-radius: 12px;
 				margin-top:16px;
 				background-color: grey;
@@ -149,27 +149,6 @@
 		<div id="content"
 			style ="width:100%; height:100%; margin: 0px; padding:0px">
 		</div>
-
-		<!--div style="
-			position:absolute;
-			text-align:center;
-			width:100%;
-			height:0%;
-			top:70%;
-			text-align:center
-			background-color:#f0f;
-			">
-			<div id="start_button" onclick="start_game()"></div>
-
-
-		</div>
-
-		<div
-
-		<div id="content"
-			style ="width:100%; height:100%; margin: 0px; padding:0px">
-		</div-->
-	  <!--canvas id="canvas"></canvas-->
 	</body>
 
 	<script src="main.c"></script>

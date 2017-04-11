@@ -86,7 +86,7 @@ function splash_update()
 	else if( tick > 120+60)//CHANGE STATE
 	{
 		clear_body();
-		menu_init();
+		game_init();
 	}
 	else if( tick > 120 )
 	{

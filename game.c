@@ -63,6 +63,7 @@ function choose( id ){ //
     {
       console.log("pim pom");
       obj.style.backgroundColor = '#4d4';
+      set_question( questions[tick%5]);
     }
     else
     {

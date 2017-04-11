@@ -26,9 +26,6 @@ function tick_check()
 }
 
 
-
-
-
 function clear_body()
 {
 		var con = document.getElementById("content") ;
@@ -63,9 +60,9 @@ void function main()
 
 	window.addEventListener('resize', resize, false);
 
-	//splash_init();
+	splash_init();
 	//menu_init();
-	game_init();
+	//game_init();
 
 //	window.addEventListener('keydown',kbd);
 //	window.addEventListener('keyup', kbu);
