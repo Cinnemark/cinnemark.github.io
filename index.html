@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true"/>
+	<!--meta name="HandheldFriendly" content="false"/-->
+	<head>
+
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" type="text/css">
+
+	  <title>Cinnemark's Quiz Game</title>
+	  <style>
+
+		html,body{
+		width:100%;
+		height:100%;
+		margin:0px;
+		padding:0px;
+
+		background-color:#000;
+
+		}
+
+
+		.box {
+			display:block;
+			position: absolute;
+			z-index: 10;
+			color: red;
+			//top:0px;
+			//left:0px;
+			//visibility: hidden;
+		}
+
+		#start_button  {
+  		//font-family: 'Sofia';
+			font-family: 'Baloo Bhaina', cursive;
+			font-size: 22px;
+			color: white;
+
+			text-align: center ;
+			border-radius: 25px;
+			background-color: grey;
+			//z-index: 10;
+			width:300px;
+			padding: 16px;
+			margin: auto ;
+			visibility: hidden ;
+		}
+
+		/*canvas {
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		width:100%;
+		height:100%;
+
+		image-rendering: optimizeSpeed;
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		}*/
+
+
+	  </style>
+
+	<!--script src="snd.c"></script-->
+	<!--script src="piano.c"></script-->
+	<script src="math.c"></script>
+	<script src="splash.c"></script>
+	</head>
+
+	<body>
+		//start button
+		<div style="
+			position:absolute;
+			text-align:center;
+			width:100%;
+			top:50%;
+			text-align:center
+			background-color:#f0f;
+			">
+		<div id="start_button"></div>
+		</div>
+
+		<div id="content"
+			style ="width:100%; height:100%; margin: 0px; padding:0px">
+		</div>
+	  <!--canvas id="canvas"></canvas-->
+	</body>
+
+	<script src="main.c"></script>
+
+</html>
